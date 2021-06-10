@@ -1,0 +1,36 @@
+var name = "John";
+var age = 16;
+var feeling = "Sad";
+
+function checkID(name, age, feeling){
+if (name =="John"){
+
+console.log("Your name is: " + name);
+console.log("Your age is: " + age);
+console.log("You are now feeling: "+feeling);
+
+}
+else{
+console.log("You are not John. Get out !");
+}
+}
+
+checkID(name, age, feeling);
+
+function getHelp(feeling){
+switch(feeling){
+case "happy":
+    console.log("Stay Happy.");
+    break;
+case "angry":
+    console.log("Get some tea and Relax.");
+    break;
+case "Sad":
+    console.log("Don't be sad. Cheer up!");
+    break;
+default:
+    console.log("You are dead.");
+}
+}
+
+getHelp(feeling);
